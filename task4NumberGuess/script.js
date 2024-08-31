@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     attempts++; // Increment the number of attempts
     attemptsDisplay.textContent = attempts; // Display the number of attempts
 
-    // Check if the user's guess is correct
+    // Check if the user guess is correct
     if (userGuess === randomNumber) {
       feedback.textContent = `Congratulations! You guessed the number in ${attempts} attempts.`;
     } else if (userGuess < randomNumber) {
@@ -34,16 +34,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Event listener for the restart button
+  // Event listener for the restart
   restartButton.addEventListener("click", () => {
     randomNumber = generateRandomNumber(minRange, maxRange); // Generate a new random number
     attempts = 0; // Reset the number of attempts
     attemptsDisplay.textContent = attempts; // Update the attempts display
     feedback.textContent = ""; // Clear the feedback message
-    guessInput.value = ""; // Clear the input field
+    guessInput.value = ""; // To clear input field
   });
 
-  // Function to generate a random number between min and max (inclusive)
+  // Function to generate a random number between min and max
   function generateRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
