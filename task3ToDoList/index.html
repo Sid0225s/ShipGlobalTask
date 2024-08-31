@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To list</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Enter a new task..." />
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+
+    <div class="container">
+      <div class="status-card backlog">
+        <h3>Backlog</h3>
+        <ul id="backlogList" class="todo-list"></ul>
+      </div>
+      <div class="status-card todo">
+        <h3>To Do</h3>
+        <ul id="todoList" class="todo-list"></ul>
+      </div>
+      <div class="status-card ongoing">
+        <h3>Ongoing</h3>
+        <ul id="ongoingList" class="todo-list"></ul>
+      </div>
+      <div class="status-card done">
+        <h3>Done</h3>
+        <ul id="doneList" class="todo-list"></ul>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
