@@ -84,17 +84,17 @@ button.move-right {
 }
 
 .backlog {
-  background-color: #ff6f61;
+  background-color: #e42110;
 }
 
 .todo {
-  background-color: #ffcc00;
+  background-color: #a99440;
 }
 
 .ongoing {
-  background-color: #00bcd4;
+  background-color: #c9cdce;
 }
 
 .done {
-  background-color: #4caf50;
+  background-color: #15ec1d;
 }
